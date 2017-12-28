@@ -1,1 +1,2 @@
-# windowsservices
+# WindowsServices
+Simple program to display the information about the windows services running locally or on network machine. There is a small footprint of this program and minimum dependencies because written in Windows SDK without using any external libraries. 
