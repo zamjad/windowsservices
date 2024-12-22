@@ -25,9 +25,9 @@
 #pragma comment(lib, "netapi32.lib")
 
 // prototype of function
-BOOL CALLBACK DialogProc(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam);
-BOOL CALLBACK DialogProcComputer(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam);
-BOOL CALLBACK	DialogProcService(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam);
+INT_PTR CALLBACK DialogProc(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam);
+INT_PTR CALLBACK DialogProcComputer(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam);
+INT_PTR CALLBACK	DialogProcService(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam);
 int InsertColumn(HWND p_hWnd, int p_iCol, LPCTSTR p_lpszHeading, int p_iWidth);
 int InsertItem(HWND p_hWnd, int p_iRow, LPCTSTR p_lpszText);
 int InsertSubItem(HWND p_hWnd, int p_iRow, LPCTSTR p_lpszText, int p_iSubItem);

@@ -18,7 +18,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 }
 
 // Dialog procedure
-BOOL CALLBACK DialogProc(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam) {
+INT_PTR CALLBACK DialogProc(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam) {
 
 	HICON hIcon = NULL;
 	static HWND hWndList = NULL;
@@ -366,7 +366,7 @@ void GetControlCode(HWND p_hWnd, DWORD p_dwType, int p_iIndex) {
 }
 
 // dialog procedure for computer dialog
-BOOL CALLBACK DialogProcComputer(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam) {
+INT_PTR CALLBACK DialogProcComputer(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam) {
 
 	HICON hIcon = NULL;
 	static HWND hWndList = NULL;
@@ -528,7 +528,7 @@ void ErrorDescription(DWORD p_dwError) {
 }
 
 // call back function for service dialog
-BOOL CALLBACK DialogProcService(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam) {
+INT_PTR CALLBACK DialogProcService(HWND p_hWnd, UINT p_uMsg, WPARAM p_wParam, LPARAM p_lParam) {
 
 	HWND hWndEdit = NULL;
 	HICON hIcon = NULL;
